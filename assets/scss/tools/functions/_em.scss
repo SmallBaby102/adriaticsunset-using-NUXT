@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @function em($pixels, $context: 16px) {
-  @return #{$pixels/strip-unit($context)}em;
+  @return #{math.div($pixels, strip-unit($context))}em;
 }

@@ -25,23 +25,23 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit ({ commit }, { req, app }) {
-        const tours = await app.$axios.$get('next-tour')
-        commit('nextTours/SET_TOURS', tours)
+        // const tours = await app.$axios.$get('next-tour')
+        // commit('nextTours/SET_TOURS', tours)
 
-        if (this.$cookies.get('user')){
-            commit('SET_USER', this.$cookies.get('user'));
-        }
+        // if (this.$cookies.get('user')){
+        //     commit('SET_USER', this.$cookies.get('user'));
+        // }
 
-        if (req && req.headers.cookie) {
-            const parsed = cookieparser.parse(req.headers.cookie);
-            if (parsed.auth) {
-                const accessToken = parsed.auth;
-                commit('SET_TOKEN', accessToken);
-                app.$axios.setToken(accessToken, 'Bearer');
-            } else {
-                app.$axios.setToken(false);
-            }
-        }
+        // if (req && req.headers.cookie) {
+        //     const parsed = cookieparser.parse(req.headers.cookie);
+        //     if (parsed.auth) {
+        //         const accessToken = parsed.auth;
+        //         commit('SET_TOKEN', accessToken);
+        //         app.$axios.setToken(accessToken, 'Bearer');
+        //     } else {
+        //         app.$axios.setToken(false);
+        //     }
+        // }
 
     },
     async LOGIN ({ commit }, { username, password }) {

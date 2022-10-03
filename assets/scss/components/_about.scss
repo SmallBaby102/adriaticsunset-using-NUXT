@@ -125,7 +125,7 @@
             @include font-family(map-get($typography, medium));
             @include rem((
                 padding: 20px 50px 20px 0
-            ))
+            ));
 
 
             svg {
@@ -155,7 +155,7 @@
         border-top: map-deep-get($colors, grayalt, 'color') 1px solid;
         @include rem((
             padding: 20px 0
-        ))
+        ));
 
         @include mq(900px) {
             color: map-deep-get($colors, slate, 'color');

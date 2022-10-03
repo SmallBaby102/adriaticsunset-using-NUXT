@@ -58,7 +58,8 @@ module.exports = {
     ],
 
     axios: {
-        baseURL: 'https://www.adriaticsunsets.com/booking/',
+        baseURL: 'localhost/booking/',
+        // baseURL: 'https://www.adriaticsunsets.com/booking/',
         debug: true,
         crossDomain: true,
         credentials: true

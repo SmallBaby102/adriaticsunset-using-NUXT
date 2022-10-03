@@ -10,7 +10,8 @@
     }
     &-title {
         text-align: center;
-        @include rem(( margin-bottom: 20px)) @include font-family(map-get($typography, bold));
+        @include rem(( margin-bottom: 20px));
+         @include font-family(map-get($typography, bold));
         color: map-deep-get($colors, white, 'color');
         @include mq(900px) {
             @include font-family(map-get($typography, mustardo));

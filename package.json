@@ -34,6 +34,7 @@
         "nuxt-facebook-pixel-module": "^1.5.0",
         "nuxt-validate": "^0.1.3",
         "picturefill": "^3.0.3",
+        "sass": "^1.55.0",
         "sass-loader": "^7.3.1",
         "sass-mq": "^4.0.2",
         "svg-inline-loader": "^0.8.2",
@@ -56,6 +57,6 @@
         "eslint-friendly-formatter": "^3.0.0",
         "eslint-loader": "^1.7.1",
         "eslint-plugin-vue": "^4.7.1",
-        "node-sass": "^4.14.1"
+        "node-sass": "npm:sass"
     }
 }

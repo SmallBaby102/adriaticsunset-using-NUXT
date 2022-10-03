@@ -108,7 +108,7 @@
         @include mq(900px) {
             @include rem((
                 margin-bottom: 40px
-            ))
+            ));
         }
 
         button {
@@ -123,9 +123,7 @@
             font-size: inherit;
             text-align: left;
             @include font-family(map-get($typography, medium));
-            @include rem((
-                padding: 20px 50px 20px 0
-            ))
+            @include rem(( padding: 20px 50px 20px 0));
 
 
             svg {
@@ -147,7 +145,7 @@
             align-self: center;
             @include rem((
                 padding: 60px
-            ))
+            ));
         }
     }
 
@@ -155,7 +153,7 @@
         border-top: map-deep-get($colors, grayalt, 'color') 1px solid;
         @include rem((
             padding: 20px 0
-        ))
+        ));
 
         @include mq(900px) {
             color: map-deep-get($colors, slate, 'color');
